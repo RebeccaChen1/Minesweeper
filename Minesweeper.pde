@@ -89,7 +89,7 @@ public void displayWinningMessage()
 {
   String winner = "You win!";
   int row = (int)(NUM_ROWS/2)-1;
-  int col = (int)(NUM_COLS/2)-(winner.length()/2);
+  int col = (int)((NUM_COLS/2)-(winner.length()/2));
   for(int i = 0; i < winner.length(); i++)
   {
     if(col+i < NUM_COLS)
