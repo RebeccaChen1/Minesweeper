@@ -7,7 +7,7 @@ public final static int NUM_COLS=20;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> bombs;
 
-private int bombscount = 2;
+private int bombscount = 30;
  //ArrayList of just the minesweeper buttons that are mined
 
 void setup ()
