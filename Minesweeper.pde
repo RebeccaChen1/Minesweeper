@@ -7,7 +7,7 @@ public final static int NUM_COLS=20;
 private MSButton[][] buttons; //2d array of minesweeper buttons
 private ArrayList <MSButton> bombs;
 
-private int bombscount = 5;
+private int bombscount = 2;
  //ArrayList of just the minesweeper buttons that are mined
 
 void setup ()
@@ -78,8 +78,8 @@ public void displayLosingMessage()
     }
 
     String loser = "You lose!";
-    int row = (NUM_ROWS/2)-1;
-    int col = (NUM_COLS/2)-(loser.length()/2);
+    int row = (int)(NUM_ROWS/2)-1;
+    int col = (int)((NUM_COLS/2)-(loser.length()/2));
     for(int i = 0; i < loser.length(); i++)
     {
         buttons[row][col+i].setLabel(loser.substring(i,i+1));
@@ -88,8 +88,8 @@ public void displayLosingMessage()
 public void displayWinningMessage()
 {
   String winner = "You win!";
-  int row = (NUM_ROWS/2)-1;
-  int col = (NUM_COLS/2)-(winner.length()/2);
+  int row = (int)(NUM_ROWS/2)-1;
+  int col = (int)(NUM_COLS/2)-(winner.length()/2);
   for(int i = 0; i < winner.length(); i++)
   {
     if(col+i < NUM_COLS)
